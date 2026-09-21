@@ -1,43 +1,76 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>実績 | ポートフォリオ</title>
-  <link rel="stylesheet" href="./style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>実績｜〇〇</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>あなたの名前</h1>
-    <nav>
-      <a href="index.html">トップ</a>
-      <a href="about.html">自己紹介</a>
-      <a href="works.html" aria-current="page">実績</a>
-    </nav>
-  </header>
 
-  <main>
-    <section>
-      <h2>制作実績</h2>
-      <p>学習で作ったものを掲載しています。これから数を増やしていきます。</p>
-    </section>
+<header class="site-header">
+  <nav class="site-nav">
+    <span class="brand">〇〇 / dev-log</span>
+    <ul>
+      <li><a href="index.html">トップ</a></li>
+      <li><a href="about.html">自己紹介</a></li>
+      <li><a href="works.html" aria-current="page">実績</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <section class="card-list">
-      <article class="card">
-        <h3>自己紹介ページ</h3>
-        <p>HTML / CSS / JavaScript で作った学習用サイト。ボタンでメッセージを切り替えます。</p>
-        <p>技術：HTML, CSS, JavaScript</p>
-      </article>
-      <article class="card">
-        <h3>学習記録スプレッドシート（GAS）</h3>
-        <p>メニューから記録追加、最新記録のメール送信、定時実行トリガーまで実装しました。</p>
-        <p>技術：Google Apps Script, スプレッドシート</p>
-      </article>
-    </section>
-  </main>
+<section class="hero" style="padding-bottom: 3rem;">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Works</p>
+    <h1>実績・制作物</h1>
+  </div>
+</section>
 
-  <footer>
-    <p>学習用ポートフォリオ（Week 7）</p>
-  </footer>
+<main>
+  <section>
+    <h2>制作物</h2>
+    <ul class="works-list">
+      <li>
+        <span class="num">01</span>
+        <div>
+          <h3>自己紹介ページ（HTML/CSS）</h3>
+          <p>HTML/CSSの基礎学習として制作した1ページ構成の自己紹介サイト。</p>
+          <span class="status">準備中</span>
+        </div>
+      </li>
+      <li>
+        <span class="num">02</span>
+        <div>
+          <h3>スプレッドシート自動通知ツール（GAS）</h3>
+          <p>スプレッドシートのデータをもとに、条件に応じて自動でメールを送信する仕組み。定時実行トリガーで毎日自動実行。</p>
+          <span class="status">運用中</span>
+        </div>
+      </li>
+      <li>
+        <span class="num">03</span>
+        <div>
+          <h3>制作予定のツール</h3>
+          <p>情報収集系・データ加工系・通知系のツールを順次公開予定です。</p>
+          <span class="status">近日公開</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>発信活動</h2>
+    <p>
+      施工管理の実務知見を、noteで発信しています。
+    </p>
+    <p><a href="https://note.com/airconditioning9">note</a></p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  &copy; 2026 〇〇
+</footer>
+
 </body>
 </html>
